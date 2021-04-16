@@ -16,11 +16,9 @@ body {
 }
 .hero-container {
   min-height: 700px;
-<<<<<<< HEAD
+
   background: url(/Images/Hero.jpg), rgba(196, 196, 196, 0.1);
-=======
-background: url(Images/Hero.jpg);
->>>>>>> ce49282270d80df3df0858ba2f2c0385ad883775
+
   background-size: cover;
 
   position: relative;
