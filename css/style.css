@@ -17,9 +17,9 @@ body {
 .hero-container {
   min-height: 700px;
 
-  background: url(/Images/Rectangle\ 1.jpg), rgba(196, 196, 196, 0.1);
+  background: url(/Hero.jpg);
 
-  background-size: cover;
+  
 
   position: relative;
   box-sizing: border-box;
