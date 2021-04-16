@@ -18,7 +18,7 @@ body {
 .hero-container {
   min-height: 700px;
 
-  background: url(/Images/Hero.jpg);
+  background: url(Images/Hero.jpg);
 
   position: relative;
   box-sizing: border-box;
