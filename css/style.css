@@ -16,7 +16,7 @@ body {
 }
 .hero-container {
   min-height: 700px;
-  background: url(/Images/Hero\ Image.jpg);
+  background: url(Images/Hero\ Image.jpg);
   background-size: cover;
 
   position: relative;
@@ -724,3 +724,4 @@ input[type="submit"] {
   padding: 20px;
   color: #555555;
 }
+/* Contact End */
