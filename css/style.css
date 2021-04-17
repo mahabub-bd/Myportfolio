@@ -5,7 +5,6 @@ html,
 body {
   font-family: "Raleway", sans-serif;
   background: #efefef;
- 
 }
 .container {
   max-width: 1520px;
@@ -17,15 +16,16 @@ body {
 }
 .hero-container {
   min-height: 700px;
-background: url(../Images/Hero.jpg);
+  background: url(../Images/Hero.jpg);
   position: relative;
   box-sizing: border-box;
 }
 .nav-container {
   background: rgba(96, 96, 96, 0.75);
-  margin: auto;
-  position: sticky;
+  width: 100%;
+  position: fixed;
   top: 0;
+  left: 0;
   z-index: 1;
 }
 .nav-bar {
@@ -34,7 +34,7 @@ background: url(../Images/Hero.jpg);
   display: flex;
   color: #fff;
   align-items: center;
-  margin-left: 224px;
+  /* margin-left: 224px; */
   margin: 0 160px;
 }
 .brand h1 {
@@ -59,7 +59,7 @@ background: url(../Images/Hero.jpg);
 .nav-item a {
   font-style: normal;
   font-weight: 600;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 33px;
   letter-spacing: 0.05em;
   text-decoration: none;
@@ -85,6 +85,18 @@ background: url(../Images/Hero.jpg);
   top: 41.86%;
 }
 
+@media only screen and (max-width: 1080px) {
+  .service-item,
+  .client-review-item,
+  .Portfolio-item {
+    flex-basis: 33%;
+    margin: 50px;
+  }
+  .contact-item-1,
+  .contact-item-2 {
+    margin: 50px;
+  }
+}
 @media only screen and (max-width: 800px) {
   .name-title {
     position: absolute;
@@ -103,6 +115,18 @@ background: url(../Images/Hero.jpg);
   .btn-group {
     margin-top: 55px;
   }
+
+  .service-item,
+  .client-review-item,
+  .Portfolio-item,
+  .counter-item {
+    flex-basis: 50%;
+    margin: 50px;
+  }
+  .contact-item-1,
+  .contact-item-2 {
+    margin: 50px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -118,6 +142,23 @@ background: url(../Images/Hero.jpg);
   }
   .btn-group {
     margin-top: 55px;
+  }
+
+  .service-item,
+  .client-review-item,
+  .Portfolio-item {
+    flex-basis: 40%;
+    margin: 50px auto;
+  }
+  .contact-item-1,
+  .contact-item-2 {
+    margin: 50px;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
@@ -179,10 +220,9 @@ background: url(../Images/Hero.jpg);
   box-sizing: border-box;
 }
 .profile {
-  flex-basis: 38.82%;
+  flex-basis: 38%;
 }
 .profile-image-container {
-  
   margin: 170px 94px 44px 140px;
 }
 .profile-image-container img {
@@ -193,6 +233,7 @@ background: url(../Images/Hero.jpg);
 .social {
   display: flex;
   justify-content: center;
+  
 }
 .icon:hover {
   transform: translateY(-4px);
@@ -201,10 +242,11 @@ background: url(../Images/Hero.jpg);
   margin-right: 30px;
   transition: 0.5s;
   cursor: pointer;
+  
 }
 .fa-facebook-square {
   color: #3b5998;
-
+ 
   font-size: 50px;
 }
 .fa-twitter-square {
@@ -251,6 +293,7 @@ background: url(../Images/Hero.jpg);
 }
 
 .about-description {
+  flex-basis: 55%;
   margin: 122px 0;
   text-align: center;
 }
@@ -327,6 +370,7 @@ background: url(../Images/Hero.jpg);
 .counter-item {
   height: 300px;
   width: 300px;
+  flex-shrink: 300px;
   background: #ffffff;
   box-shadow: 0px 5px 10px rgba(69, 67, 96, 0.1);
   border-radius: 10px;
@@ -379,7 +423,7 @@ background: url(../Images/Hero.jpg);
 .service-item {
   flex-basis: 30%;
   min-width: 380px;
-
+  flex-shrink: 400px;
   height: 290px;
   background: #ffffff;
   box-shadow: 0px 5px 10px rgba(69, 67, 96, 0.1);
@@ -485,7 +529,7 @@ background: url(../Images/Hero.jpg);
 .Portfolio-item {
   flex-basis: 30%;
   min-width: 400px;
-
+  flex-shrink: 400px;
   height: 300px;
   background: #ffffff;
   box-shadow: 0px 5px 10px rgba(69, 67, 96, 0.1);
@@ -635,7 +679,7 @@ background: url(../Images/Hero.jpg);
 
 .contact-item-1 {
   flex-basis: 40%;
-  margin-left: 74px;
+  flex-shrink: 600px;
   min-width: 600px;
   position: relative;
   height: 550px;
@@ -647,6 +691,7 @@ background: url(../Images/Hero.jpg);
 .contact-item-2 {
   flex-basis: 40%;
   min-width: 600px;
+  flex-shrink: 600px;
   height: 550px;
   background: #ffffff;
   box-shadow: 0px 5px 10px rgba(69, 67, 96, 0.1);
